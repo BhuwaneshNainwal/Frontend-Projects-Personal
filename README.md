@@ -1,2 +1,3 @@
-This is master branch.
+Restaurant website clone made with HTML CSS.
+
  
