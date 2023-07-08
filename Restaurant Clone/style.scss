@@ -1,0 +1,688 @@
+$headerColor:#232B38;
+$headerHeight: 3em;
+
+div
+{
+    box-sizing: border-box;
+}
+
+#body
+{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#header
+{
+    background-color: $headerColor;
+    position: relative;
+    width: 100%;
+    height: $headerHeight;
+    box-sizing: border-box;
+}
+
+#header-social-media
+{
+    position: absolute;
+    left: 2em;
+    height: $headerHeight;
+    line-height: $headerHeight;
+    box-sizing: border-box;
+}
+
+.social-media-icons
+{
+    padding-right: 0.9em;
+}
+
+#header-log-options
+{
+    position:absolute;
+    right: 0;
+}
+
+a.social-media-anchor-tag
+{
+    text-decoration: none;
+}
+
+#header-log-options
+{
+    position: absolute;
+    right: 2em;
+    height: $headerHeight;
+    line-height: 3em;
+}
+
+
+span.header-log-options-span
+{
+    color: #FEFEFE;
+    padding-right: 0.9em;
+}
+
+#after-header-container
+{
+    display: flex;
+    height: 6em;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+#contact-us-container
+{
+    display: flex;
+    width: 20em;
+    align-items: center;
+}
+
+#contact-us-span
+{
+    font-size: 0.8em;
+}
+
+#phone-icon
+{
+    margin: 0 2em;
+}
+
+
+#logo
+{
+    display: flex;
+    width: 18em;
+    align-items: center;
+}
+
+#working-hours
+{
+    display: flex;
+    width: 18em;
+    align-items: center;
+}
+
+#working-hours-span
+{
+    font-size: 0.8em;
+}
+
+#email, #week
+{
+    color: #6C6C6C;
+}
+
+#navigation-bar-list
+{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;    
+    font-size: 1em;
+}
+
+#navigation-bar-list > a
+{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 1em;
+}
+
+#navigation-bar-list > a:hover{
+    background-color: #EEBF00;
+    color: white;
+}
+
+#navigation-bar-list
+{
+    box-shadow: 0em 1em 1em rgba(0, 0, 0, 0.08);
+}
+
+#navigation-bar-list a:first-child
+{
+    background-color: #EEBF00;
+    color: #FEFEFE;
+}
+
+#description
+{
+    background-image: url('./images/hero.png');
+    height: 35em;
+    padding: 1em;
+    background-size: cover;
+    color:#232B38;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#straw
+{
+   padding-top: 5em;
+}
+
+
+#lorem-ipsum
+{
+    text-align: justify;
+}
+
+#world-best-shopping
+{
+    font-size: 2em;
+}
+
+#left
+{
+    display: flex;
+    height: 15em;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#shopping
+{
+  color: #EEBF00;
+}
+
+.read-more
+{
+    background-color: #EEBF00;
+    padding: 0.9em;
+    width: 8em;
+    color: white;
+    border-radius: 0.3em;
+   border: 0.001em solid #EEBF00;
+    
+}
+
+.read-more:hover
+{
+   color: #EEBF00;  
+   background-color: white;
+
+}
+
+#shop-now
+{
+    background-color: black;
+    padding: 0.9em;
+    width: 8em;
+    color: white;
+    border-radius: 0.3em;
+}
+
+
+
+#shop-now:hover
+{
+   color: black;
+   background-color: white;
+}
+
+#top-products-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40em;
+    background-color: #F0F0F0;
+}
+
+#top-products-container
+{
+    font-size: 1.4em;
+}
+
+#item-container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item
+{
+    background-color: white;
+    display: flex;
+    width: 10em;
+    height: 15em;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.plate
+{
+    display: block;
+    width: 7em;
+    height: 5em;
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid gray;
+}
+
+.stars
+{
+    display: flex;
+}
+
+.price
+{
+    color: red;
+}
+
+
+.cart-container
+{
+    display: flex;
+    height: 1.5em;
+    background-color: #EEBF00;
+
+}
+
+
+.cart-image
+{
+    height: 1em;
+    width: 1em;
+    padding: 0.3em;
+}
+
+
+.add-to-cart
+{
+    background-color: white;
+    padding: 0.3em;
+    font-size: 0.75em;
+    border: 0.1em solid #EEBF00;
+    width: 6em;
+}
+
+.add-to-cart:hover
+{
+    background-color: #EEBF00;
+    color: white;
+}
+
+.view-more
+{
+    width: 7em;
+    height: 3em;
+    color: white;
+    border:0.0001em solid #232b38;
+    border-radius: 0.4em;
+    background-color: #232B38;
+}
+
+.view-more:hover
+{
+    color: #232B38;
+    background-color: white;
+}
+
+#fresh-meal
+{
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#freshman-image-text
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 2em;
+    font-size: 1em;
+}
+
+#yogurt-image
+{
+    padding: 3em;
+    width: 27em;
+    height: em;
+}
+
+.fresh-meal-read-more
+{
+    width: 7em;
+    height: 3em;
+    color: white;
+    border:0.0001em solid #232b38;
+    border-radius: 0.4em;
+    background-color: #232B38;
+}
+
+.fresh-meal-read-more:hover
+{
+    color: #232B38;
+    background-color: white;
+}
+
+#services
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #F0F0F0;
+    height: 40em;
+}
+
+#transport-container
+{
+    display: flex;
+    height: 20em;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+
+.items
+{
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 19em;
+    height: 20em;
+}
+
+.transport-image
+{
+    position: absolute;
+    top: -2.8em;
+    left: 6.5em;
+}
+
+.transport-header
+{
+    font-size: 1.3em;
+}
+
+.transport-body
+{
+    margin: 1.5em;
+    font-size: 0.9em;    
+}
+
+#free-home-delivery
+{
+    color: #EEBF00;
+}
+
+#salad-table-image
+{
+ 
+}
+
+#big-deal
+{
+    display: flex;
+    height: 30em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.3)), url("./images/food-table.jpg");
+    opacity: 0.75;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+#big-deals-text
+{
+    color:white;
+    font-size: 1.8em;
+    z-index: 1;
+}
+
+#days
+{
+    display: flex;
+    width: 50em;
+    justify-content: space-evenly;
+}
+
+#days > div
+{
+    z-index: 1;
+    background-color: #EEBF00;
+    border-radius: 0.6em;
+    color: white;
+    padding: 3em;
+}
+
+#latest-blog
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 55em;
+    background-color: #F0F0F0;
+    
+}
+
+#coffee-container
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.coffee-item
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    height: 30em;
+    width: 23em;
+}
+
+.coffee-pic
+{
+    width: 100%;
+}
+
+#rasberry-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #EEBF00;
+}
+
+
+.coffee-metadata
+{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.9em;
+}
+
+.coffee-metadata > div
+{
+    font-size: 0.8em;
+}
+
+.coffee-item > *:not(:first-child):not(:nth-child(2))
+{
+    text-align: justify;
+    padding: 0em 5em;
+}
+
+.coffee-item > *:last-child 
+{
+    margin-bottom: 1em;
+}
+
+#rasberry-right
+{
+    padding-top: 3em;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#rasberry-image
+{
+    height: 20em;
+    width: 30em;
+}
+
+#email
+{
+    padding: 1em;
+    width: 28em;
+    border: 0em;
+    border-radius: 0.2em;
+}
+
+#email-textarea
+{
+    position: relative;
+}
+
+#subscribe
+{
+    color: white;
+    position: absolute;
+    background-color: #EEBF00;
+    top:0.3em;
+    padding: 0.4em;
+    bottom: 0.3em;
+    right: 9em;
+    border-radius: 0.1em;
+}
+
+#subscribe:hover
+{
+    background-color: #232B38;
+}
+
+#contact-us-container2
+{
+    display: flex;
+    justify-content: space-evenly;
+    height: 28.4em;
+    width: 100%;
+}
+
+#contact-us-left2
+{
+    display: flex;
+    width: 100%;
+    height: 22em;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact-us-right2
+{
+    width: 100%;
+    height: 20em;
+}
+
+.meta-data
+{
+    position: relative;
+}
+
+.meta-data-image-div
+{
+    position: absolute;
+    top: 0.2em;
+    right: 14.5em;
+}
+
+.contact-us-wrapper
+{
+    display: flex;
+    height: 2.5em;
+    width: 14em;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#last-div
+{
+    display: flex;
+    justify-content: space-evenly;
+    height: 25em;
+    background-color: #2D333F;
+    color: white;
+}
+
+.item2
+{
+    display: flex;
+    flex-direction: column;
+    height: 20em;
+    width: 15em;
+    justify-content: space-evenly;
+    background-color: #2D333F;
+}
+
+
+
+.item-anchor > a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.item2 > div
+{
+    width: 100%;
+}
+
+.item-top
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-top > h3
+{
+    text-align: center;
+}
+
+hr
+{
+    width: 100%;
+}
+
+.item-anchor
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 4em ;
+    height: 15em;
+    align-items: center;
+}
+
+.item-anchor > div
+{
+    display: flex;
+    width: 9em;
+    justify-content: space-evenly;
+}
+
+.item-anchor-new-div > div
+{
+    width: 5em;
+}
