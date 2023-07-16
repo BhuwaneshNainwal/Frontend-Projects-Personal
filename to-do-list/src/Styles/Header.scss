@@ -1,0 +1,13 @@
+$blackColor: black;
+$whiteColor: white;
+
+.header {
+  background-color: $blackColor;
+  height: 5em;
+  line-height: 5em;
+  text-align: center;
+}
+
+.header > h2 {
+  color: $whiteColor;
+}
