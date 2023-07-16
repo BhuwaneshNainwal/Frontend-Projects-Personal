@@ -1,0 +1,24 @@
+$blackColor: black;
+
+.add-item-input {
+  margin: 1em;
+  padding: 1.5em 2em;
+  border: 0.1em solid $blackColor;
+}
+
+.add-item-input > input {
+  padding: 1em;
+  width: 80%;
+}
+
+.add-item-input > button {
+  padding: 1em;
+}
+
+.search-item-container {
+  margin-top: 1em;
+}
+
+.search-item-container > input {
+  padding: 1em;
+}

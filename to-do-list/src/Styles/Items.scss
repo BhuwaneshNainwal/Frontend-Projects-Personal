@@ -1,0 +1,24 @@
+$blackColor: black;
+
+.items-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.1em solid $blackColor;
+  margin: 1em;
+  padding: 1em;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4em;
+  margin: 0.4em;
+  width: 100%;
+  border: 0.01em solid $blackColor;
+}
+
+.item-strike-through {
+  text-decoration: line-through;
+}
