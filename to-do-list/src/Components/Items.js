@@ -2,23 +2,14 @@ import React, { useEffect } from "react";
 import "../Styles/Items.scss";
 
 function Items({ itemsList, setItemsList, setEditIndex, searchDebouncedItem }) {
-  // useEffect(() => {
-  //   console.log(searchItem.length);
-  //   let updatedItemsList = [...itemsList];
-  //   updatedItemsList =
-  //     searchItem.length > 0
-  //       ? updatedItemsList.filter((item) =>
-  //           item.itemValue.startsWith(searchItem)
-  //         )
-  //       : updatedItemsList;
-  //   setItemsList(updatedItemsList);
-  // }, [searchItem]);
-
   useEffect(() => {
     console.log("searching performed");
   }, [searchDebouncedItem]);
 
   const deleteOnClickHandler = (index) => {
+    console.log(itemsList[index].id);
+    console.log(localStorage.getItem(itemsList[index].id));
+    localStorage.removeItem(itemsList[index].id);
     const updatedList = [...itemsList];
     updatedList.splice(index, 1);
     setItemsList(updatedList);

@@ -39,12 +39,29 @@ function AddItem({
 
   function addItemHandler() {
     addItemEventReference.current.target.value = "";
-    setItem("");
+    item.length > 0 &&
+      localStorage.setItem(
+        itemsList.length === 0 ? 0 : itemsList[itemsList.length - 1].id + 1,
+        JSON.stringify({
+          id:
+            itemsList.length === 0 ? 0 : itemsList[itemsList.length - 1].id + 1,
+          itemValue: item,
+          isStrikeThrough: false,
+        })
+      );
+
     item.length > 0 &&
       setItemsList((itemsList) => [
         ...itemsList,
-        { itemValue: item, isStrikeThrough: false },
+        {
+          id:
+            itemsList.length === 0 ? 0 : itemsList[itemsList.length - 1].id + 1,
+          itemValue: item,
+          isStrikeThrough: false,
+        },
       ]);
+
+    setItem("");
   }
 
   function editItemHandler() {
@@ -61,9 +78,14 @@ function AddItem({
 
   function deleteAllHandler() {
     let updatedItemsList = [...itemsList];
+    updatedItemsList.map(
+      (item) =>
+        item.isStrikeThrough === true && localStorage.removeItem(item.id)
+    );
     updatedItemsList = updatedItemsList.filter(
       (item) => item.isStrikeThrough === false
     );
+
     setItemsList(updatedItemsList);
   }
 
