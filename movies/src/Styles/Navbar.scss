@@ -1,0 +1,32 @@
+$whiteColor: white;
+$redColor: rgb(255, 80, 41);
+$yellowColor: yellow;
+$blackColor: black;
+
+#nav-bar {
+  background-color: $redColor;
+}
+
+#nav-bar li {
+  display: inline;
+}
+
+#links {
+  display: flex;
+  height: 4em;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#nav-bar a {
+  padding: 1em;
+  text-decoration: none;
+  color: $whiteColor;
+  font-weight: bold;
+}
+
+#nav-bar a:hover {
+  background-color: $yellowColor;
+  color: $blackColor;
+  font-weight: bold;
+}

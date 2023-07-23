@@ -1,0 +1,29 @@
+$blackColor: black;
+$skyblueColor: rgb(83, 181, 242);
+
+#comedy-movies-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 2em;
+  column-gap: 1em;
+  row-gap: 1em;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  border: 0.1em solid $blackColor;
+}
+
+.movie > p {
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  background-color: $skyblueColor;
+}
+
+.movie > img {
+  width: 100%;
+  height: 100%;
+}
